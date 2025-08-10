@@ -9,14 +9,14 @@ print(f"Risultato: {saluto('Mondo')}")
 print(
     "Spiegazione: Una semplice lambda che prende un argomento e restituisce una stringa formattata.\n"
 )
-time.sleep(5)
+time.sleep(2)
 
 print("--- 2. Utilizzo con Funzioni di Ordine Superiore (map, filter) ---")
 numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # `map` applica una lambda a ogni elemento di una lista.
 quadrati = list(map(lambda x: x**2, numeri))
 print(f"Numeri al quadrato (con map): {quadrati}")
-time.sleep(5)
+time.sleep(2)
 
 # `filter` crea una lista di elementi per i quali la lambda restituisce True.
 pari = list(filter(lambda x: x % 2 == 0, numeri))
@@ -24,7 +24,7 @@ print(f"Numeri pari (con filter): {pari}")
 print(
     "Spiegazione: `map` e `filter` sono usi classici, ma fondamentali per capire la potenza delle lambda.\n"
 )
-time.sleep(5)
+time.sleep(2)
 
 print("--- 3. Ordinamento di Strutture Dati Complesse ---")
 studenti = [
@@ -40,7 +40,7 @@ print(f"Studenti ordinati per voto (decrescente): {studenti_ordinati}")
 print(
     "Spiegazione: `key` accetta una funzione. Una lambda è perfetta per fornire una logica di ordinamento al volo.\n"
 )
-time.sleep(5)
+time.sleep(2)
 
 print("--- 4. IIFE (Immediately Invoked Function Expression) ---")
 # Una lambda che viene definita e chiamata immediatamente.
@@ -49,7 +49,7 @@ print(f"Risultato di una IIFE: {risultato_immediato}")
 print(
     "Spiegazione: Utile per calcoli veloci e monouso senza inquinare il namespace con un nome di funzione.\n"
 )
-time.sleep(5)
+time.sleep(2)
 
 print("--- 5. Lambda con Logica Condizionale ---")
 # Le lambda possono contenere un'espressione ternaria (if-else).
@@ -59,7 +59,7 @@ print(f"Una persona di 15 anni è: {controllo_eta(15)}")
 print(
     "Spiegazione: Permette di incapsulare una semplice logica if-else in una singola riga.\n"
 )
-time.sleep(5)
+time.sleep(2)
 
 print("--- 6. Function Factory: Funzioni che Restituiscono Lambda ---")
 
@@ -78,7 +78,7 @@ print(f"10 moltiplicato per 7 fa: {moltiplica_per_10(7)}")
 print(
     "Spiegazione: Le lambda catturano il valore di 'n' dal loro ambiente di definizione (closure), creando funzioni specializzate.\n"
 )
-time.sleep(5)
+time.sleep(2)
 
 print("--- 7. Lambda come Valori in un Dizionario (Dispatcher) ---")
 # Usa un dizionario per mappare operazioni a delle lambda.
@@ -96,7 +96,7 @@ print(f"10 / 0 = {operazioni['dividi'](10, 0)}")
 print(
     "Spiegazione: Un modo elegante per implementare un dispatcher o un costrutto 'switch' che non esiste nativamente in Python.\n"
 )
-time.sleep(5)
+time.sleep(2)
 
 print("--- 8. Lambda in UI Frameworks (esempio concettuale) ---")
 # In librerie come Tkinter o in framework web, le lambda sono usate per i callback.
@@ -113,4 +113,4 @@ print("--- 8. Lambda in UI Frameworks (esempio concettuale) ---")
 print(
     "Spiegazione: Le lambda sono perfette per creare piccole funzioni di callback che catturano lo stato necessario dal contesto in cui sono definite, senza bisogno di definire una funzione separata e completa.\n"
 )
-time.sleep(5)
+time.sleep(2)
