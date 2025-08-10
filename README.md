@@ -1,6 +1,6 @@
-# Massimizzazione del Profitto
+# Massimizzazione del Profitto e Esempi di Lambda
 
-Questo repository contiene uno script Python per calcolare la quantità di produzione ottimale che massimizza il profitto.
+Questo repository contiene script Python per calcolare la quantità di produzione ottimale che massimizza il profitto e per mostrare esempi creativi di funzioni lambda.
 
 ## `profitto.py`
 
@@ -41,3 +41,28 @@ python profitto.py
 ```
 
 Lo script richiederà di inserire i parametri necessari e quindi visualizzerà il grafico con i risultati.
+
+## `lambda.py`
+
+Questo script fornisce una serie di esempi commentati per illustrare la versatilità e la potenza delle funzioni `lambda` in Python.
+
+### Esempi Inclusi
+
+1.  **Funzioni Anonime Semplici**: Uso base di una lambda per una semplice operazione.
+2.  **Funzioni di Ordine Superiore**: Utilizzo con `map` e `filter`.
+3.  **Ordinamento di Strutture Dati Complesse**: Ordinamento di liste di dizionari.
+4.  **IIFE (Immediately Invoked Function Expression)**: Definizione ed esecuzione immediata di una lambda.
+5.  **Logica Condizionale**: Utilizzo di espressioni ternarie all'interno di una lambda.
+6.  **Function Factory**: Funzioni che restituiscono funzioni lambda (closure).
+7.  **Dispatcher**: Utilizzo di lambda come valori in un dizionario per implementare uno switch.
+8.  **UI Frameworks**: Esempio concettuale di utilizzo di lambda per callback.
+
+### Come eseguirlo
+
+Per eseguire lo script:
+
+```bash
+python lambda.py
+```
+
+Lo script stamperà a schermo una spiegazione di ogni esempio, seguita dal risultato.
