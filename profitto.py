@@ -93,10 +93,14 @@ punti_tabella.sort(key=lambda x: x[0])
 
 # Stampa la tabella sotto il grafico come testo
 fig = plt.gcf()
-table_text = f"""--- Analisi Punti Vicini ---
-{"Quantità (Q)":<20} | {"Profitto (€)":<20}
--------------------------------------------
-{"\n".join([f"{q:<20.2f} | {p:<20.2f}" for q, p in punti_tabella])}"""
+# Costruisce il testo della tabella senza usare sequenze di escape nelle espressioni f-string
+righe_tabella = "\n".join([f"{q:<20.2f} | {p:<20.2f}" for q, p in punti_tabella])
+table_text = (
+    "--- Analisi Punti Vicini ---\n"
+    f"{'Quantità (Q)':<20} | {'Profitto (€)':<20}\n"
+    "-------------------------------------------\n"
+    f"{righe_tabella}"
+)
 fig.text(
     0.5,
     -0.1,
